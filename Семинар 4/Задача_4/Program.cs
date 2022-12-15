@@ -1,7 +1,7 @@
 ﻿// выводит массив из 8ми элементов заполненый 0 и 1 в случайном порядке
 void FillArray(int[] collection)
 {
-    int length = 8;//collection.Length;
+    int length = collection.Length;
 
     Console.Write("[");
 
