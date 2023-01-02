@@ -18,7 +18,7 @@ void InitMatrix(int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
+            array[i, j] = new Random().Next(1, 99);
         }
     }
 }
@@ -77,3 +77,33 @@ InitMatrix(array);
 PrintMatrix(array);
 Console.WriteLine();
 Dictionary(array);
+
+/*
+void CalculateNumbers (int[,] matrix)
+{
+    int m = matrix.GetLength(0);
+    int n = matrix.GetLength(1);
+    int numberOfElements = m * n;
+    int number = 0;
+    int count = 0;
+    int total = 0;
+
+    while (total != numberOfElements)
+    {
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                if(matrix[i, j] == number)
+                {
+                    count++;
+                }
+            }
+        }
+System.Console.WriteLine($"Число {number} встречается {count} раз;");
+total+= count;
+count = 0;
+number++;
+    }
+}
+*/
